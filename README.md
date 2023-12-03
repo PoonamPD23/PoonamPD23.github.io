@@ -15,7 +15,7 @@ An essential part of my journey has been the integration of computational method
 
 ## 🌱 Research Interests
 
-- **Developmental Biology:** Understanding the intricate processes that drive the development of organisms.
+- **Development Biology:** Understanding the intricate processes that drive the development of organisms.
 - **Cell Biology & Biochemistry:** Exploring the molecular machinery of life.
 - **Genomic Studies:** Deciphering the code within our DNA.
 - **Computational Biology:** Utilizing computational tools for biological research.
