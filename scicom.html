@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Poonam Dhiman - Science Communication</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        .work-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            border: rgba(39, 167, 118, 0.8) solid 0.8rem;
+        }
+
+        .work-item {
+            flex-basis: calc(50% - 40px);
+            margin: 20px;
+            border: orange solid 0.3rem;
+            padding: 20px;
+        }
+
+        .work-img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .work-img:hover {
+            transform: scale(1.05);
+        }
+
+        .work-description {
+            /* Styling for the description text */
+        }
+
+        @media (max-width: 768px) {
+            .work-item {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+
+    <style>
+        .research-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            gap: 20px;
+            border: orange solid 0.5rem;
+        }
+
+        .project-descriptions,
+        .visual-abstracts {
+            flex: 1;
+            padding: 10px;
+            max-width: 50%;
+        }
+
+        .dropdown-btn {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .dropdown-btn:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        .dropdown-content {
+            display: none;
+            padding: 10px;
+        }
+
+        .abstract-img {
+            width: 100%;
+            max-width: 850px;
+            display: none;
+            /* Initially hidden */
+        }
+
+        .visual-abstracts {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider {
+            width: 100%;
+            display: flex;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            max-width: 850px;
+            display: none;
+            /* Initially hidden */
+            transition: opacity 0.5s ease;
+        }
+
+        /* Initially show the first slide */
+        .slide:first-child {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <i class="fa-solid fa-microscope"></i>
+                <h1>Poonam Dhiman</h1>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="scicom.html">Science Communication</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+
+            <div class="header-social-links">
+                <a href="https://twitter.com/_poonamdhiman" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/poonam.dhiman.37625843" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/pdhiman2552/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/poonam-dhiman-3236132a3/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+              </div>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main" data-aos="fade" data-aos-delay="1500">
+
+        <!-- ======= End Page Header ======= -->
+        <div class="page-header d-flex align-items-center">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2 style="color: rgba(39, 167, 118, 0.8);">"Science isn't finished until it is communicated"</h2>
+                        <p>- Sir Mark Walport</p>
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Page Header -->
+
+        <!-- Flexbox Grid for Showcasing Work -->
+        <section class="container work-showcase">
+            <div class="row">
+                <!-- Work Item 1 -->
+                <div class="col-md-6 work-item">
+                    <img src="assets/img/doodle1.jpg" alt="Doodle 1" class="work-img">
+                    <div class="work-description">
+                        <p>Exploring the intricacies of Stem Cell research through art</p>
+                    </div>
+                </div>
+
+                <!-- Embedded YouTube Video -->
+                <div class="col-md-6 work-item">
+                    <iframe width="560" height="415" src="https://www.youtube.com/embed/5KFBg9wb_IE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="work-description">
+                        <p>Microorganisms and their resilience</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 work-item">
+                    <img src="assets/img/doodle2.jpg" alt="Doodle 1" class="work-img">
+                    <div class="work-description">
+                        <p>Women in science/academia</p>
+                    </div>
+                </div>
+                <div class="col-md-6 work-item">
+                    <img src="assets/img/doodle3.jpg" alt="Doodle 1" class="work-img">
+                    <div class="work-description">
+                        <p>The tale of vaccine production (Indian context)</p>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Additional work items... -->
+            </div>
+        </section>
+
+        <div class="page-header d-flex align-items-center">
+            <div class="container position-relative">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2 style="color: rgba(39, 167, 118, 0.8);">Fieldwork in Science Education</h2>
+                        <hr>
+                        <p> Jan 2023 - April 2023</p>
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Page Header -->
+
+        <div class="research-container">
+            <!-- Left Side: Dropdowns for Project Descriptions -->
+            <div class="project-descriptions">
+                <!-- Project 1 -->
+                <div class="project">
+                    <button class="dropdown-btn" data-target="abstract-1">The Struggles of Science Communicators:
+                        Understanding the Roadblocks and Solutions
+                    </button>
+                    <div class="dropdown-content">
+                        <!-- Project description here -->
+                        <p>This comprehensive research project was conducted to understand the unique challenges faced
+                            by science communicators in India. The study involved in-depth Zoom interviews with five
+                            diverse professionals in the field of science communication, including a Science
+                            Illustrator, a Science Editor & Journalist, a Freelance Science Writer, a Scientific
+                            Filmmaker, and a Science Author who also works as a Communication Consultant.
+
+                            The primary goal was to delve into the experiences of these communicators and uncover the
+                            specific hurdles they encounter in their work. </p>
+                    </div>
+                </div>
+                <!-- Additional projects... -->
+            </div>
+
+            <!-- Right Side: Visual Abstracts -->
+            <div class="visual-abstracts">
+                <div class="slider">
+                    <img src="assets/img/field1.png" alt="Visual Abstract 1" class="slide" id="slide-1">
+                    <img src="assets/img/field2.png" alt="Visual Abstract 2" class="slide" id="slide-2">
+                    <!-- Add more slides if needed -->
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Poonam Dhiman 2023</span></strong>. All Rights Reserved
+            </div>
+
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader">
+        <div class="line"></div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var dropdowns = document.getElementsByClassName("dropdown-btn");
+            var lastOpened = null;
+            var currentSlideIndex = 0;
+            var slides = document.getElementsByClassName("slide");
+            var slideInterval = 3000; // Change slides every 3000 milliseconds
+
+            function showSlide(index) {
+                for (var i = 0; i < slides.length; i++) {
+                    slides[i].style.display = 'none';
+                    slides[i].style.opacity = 0;
+                }
+                slides[index].style.display = 'block';
+                slides[index].style.opacity = 1;
+            }
+
+            function nextSlide() {
+                currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+                showSlide(currentSlideIndex);
+            }
+
+            setInterval(nextSlide, slideInterval);
+
+            for (var i = 0; i < dropdowns.length; i++) {
+                dropdowns[i].addEventListener("click", function () {
+                    var content = this.nextElementSibling;
+                    var slider = document.querySelector('.slider');
+
+                    if (lastOpened && lastOpened !== this) {
+                        lastOpened.nextElementSibling.style.display = 'none';
+                        slider.style.display = 'none';
+                    }
+
+                    content.style.display = content.style.display === "block" ? "none" : "block";
+                    slider.style.display = slider.style.display === "block" ? "none" : "block";
+
+                    lastOpened = this;
+                });
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
