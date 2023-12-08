@@ -35,40 +35,108 @@
     <link href="assets/css/main.css" rel="stylesheet">
 
     <style>
-        .work-showcase {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            border: rgba(39, 167, 118, 0.8) solid 0.8rem;
-        }
+   /* General Styles */
+.work-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: rgba(39, 167, 118, 0.8) solid 0.8rem;
+}
 
-        .work-item {
-            flex-basis: calc(50% - 40px);
-            margin: 20px;
-            border: orange solid 0.3rem;
-            padding: 20px;
-        }
+.work-item {
+    margin: 0px;
+    border: orange solid 0.3rem;
+    padding: 20px;
+}
 
-        .work-img {
-            width: 100%;
-            height: auto;
-            transition: transform 0.3s ease;
-        }
+.work-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
 
-        .work-img:hover {
-            transform: scale(1.05);
-        }
+.work-img:hover {
+    transform: scale(1.05);
+}
 
+.research-container {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+    border: orange solid 0.5rem;
+}
 
-        @media (max-width: 768px) {
-            .work-item {
-                flex-basis: 100%;
-            }
-        }
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .work-item {
+        flex-basis: 100%;
+    }
+
+    .project-descriptions, .visual-abstracts {
+        max-width: 100%;
+    }
+
+    .dropdown-btn {
+        padding: 8px;
+    }
+}
+
+/* Responsive iframe for YouTube videos */
+iframe {
+    width: 100%;
+    height: 90%;
+}
+
+/* Adjustments for Dropdowns and Sliders */
+.dropdown-btn {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dropdown-btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.dropdown-content {
+    display: none;
+    padding: 10px;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 100%;
+    max-width: 100%; /* Adjusted for responsiveness */
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.slide:first-child {
+    display: block;
+    opacity: 1;
+}
+
+/* Additional Styles as needed */
+
     </style>
 
     <style>
-        .research-container {
+        /* .research-container {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -77,8 +145,8 @@
             padding: 20px;
             gap: 20px;
             border: orange solid 0.5rem;
-        }
-
+        } */
+/* 
         .project-descriptions,
         .visual-abstracts {
             flex: 1;
@@ -105,7 +173,7 @@
         .dropdown-content {
             display: none;
             padding: 10px;
-        }
+        } */
 
         .abstract-img {
             width: 100%;
@@ -120,24 +188,7 @@
             overflow: hidden;
         }
 
-        .slider {
-            width: 100%;
-            display: flex;
-        }
-
-        .slide {
-            flex: 0 0 100%;
-            max-width: 850px;
-            display: none;
-            /* Initially hidden */
-            transition: opacity 0.5s ease;
-        }
-
-        /* Initially show the first slide */
-        .slide:first-child {
-            display: block;
-            opacity: 1;
-        }
+      
     </style>
 
 </head>
@@ -157,7 +208,7 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="research.html">Research</a></li>

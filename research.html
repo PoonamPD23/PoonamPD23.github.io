@@ -35,60 +35,80 @@
     <link href="assets/css/main.css" rel="stylesheet">
 
     <style>
-        .dropdown-btn {
-            background-color: #444;
-            color: white;
-            padding: 10px;
-            border: none;
-            text-align: left;
-            width: 100%;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+    /* General Styles for Research Container and its Children */
+.research-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+    border: rgba(39, 167, 118, 0.8) solid 0.5rem;
+}
 
-        .dropdown-btn:hover {
-            background-color: #555;
-            transform: scale(1.05);
-        }
+.project-descriptions,
+.visual-abstracts {
+    flex: 1; /* Each section takes equal width */
+    padding: 10px;
+    max-width: 50%; /* Limit max width to 50% of the container */
+}
 
-        .dropdown-content {
-            display: none;
-            padding: 10px;
-            transition: max-height 0.3s ease-out;
-            overflow: hidden;
-        }
+/* Dropdown Button Styles */
+.dropdown-btn {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
-        .abstract-img {
-            width: 100%;
-            max-width: 750px;
-            /* Adjust as needed */
-            display: none;
-            /* Initially hidden */
-        }
+.dropdown-btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
 
-        .research-container {
-            display: flex;
-            justify-content: center;
-            /* Aligns children (flex items) horizontally in the center */
-            align-items: center;
-            /* Aligns children vertically in the center */
-            background-color: black;
-            /* Or any color you prefer */
-            color: white;
-            padding: 20px;
-            gap: 20px;
-            border: rgba(39, 167, 118, 0.8) solid 0.5rem;
-            /* Adds space between the flex items */
-        }
+.dropdown-content {
+    display: none;
+    padding: 10px;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
 
-        .project-descriptions,
-        .visual-abstracts {
-            flex: 1;
-            /* Each box takes equal width */
-            padding: 10px;
-            max-width: 50%;
-            /* Ensures each box does not grow beyond 50% of the container's width */
-        }
+/* Styles for Visual Abstracts */
+.abstract-img {
+    width: 100%;
+    max-width: 750px; /* Adjust as needed */
+    display: none; /* Initially hidden */
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .research-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .project-descriptions,
+    .visual-abstracts {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    .abstract-img {
+        display: block; /* Show images */
+        width: 100%; /* Full width for images */
+        max-width: 100%; /* Remove max-width restriction */
+    }
+
+    .dropdown-content {
+        padding: 5px; /* Smaller padding for small screens */
+    }
+}
+
+
     </style>
 
 </head>
@@ -108,7 +128,7 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="research.html" class="active">Research</a></li>
